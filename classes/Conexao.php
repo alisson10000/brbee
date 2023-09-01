@@ -1,27 +1,15 @@
 <?php
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
- */
-
-/**
- * Description of Conexao
- *
- * @author alisson
- */
 class Conexao {
 
-    private $_local;
-    private $_senha;
-    private $_usuario;
-    private $_banco;
+    public $_local;
+    public $_senha;
+    public $_usuario;
+    public $_banco;
 
     public function __construct($_local, $_usuario, $_senha, $_banco) {
         $this->_local = $_local;
         $this->_usuario = $_usuario;
         $this->_senha = $_senha;
-
         $this->_banco = $_banco;
     }
 
@@ -144,12 +132,22 @@ class Conexao {
     }
 
     /*
-     * Exemplo de como utilizar a classe listarEntidade.
+     * Exemplo de como utilizar o método listarEntidade.
      * 
      * 
      * $atributos = ["idUsuario", "nomeUsuario", "loginUsuario","senhaUsuario"];
       $consulta = "select * from usuarios";
       $entidades = $listar->listarEntidade($consulta, $atributos);
      * 
+     * 
+     *   foreach ($entidades as $entidade) {
+     * 
+     *  echo "<td>".$entidade['idUsuario'] ."</td><td>". $entidade['nomeUsuario'] . "</td><td>".$entidade['loginUsuario'] . "</td><td>".$entidade['senhaUsuario']."</td>";
+     * 
+     * 
+     * }
+     * 
+     * 
         */
 }
+require 'Clients.php';
