@@ -53,7 +53,7 @@
         <table>
 
         <?php
-        $list = $client->query();
+        $list = $client->queryClient();
 
         foreach ($list as $value) {
 
