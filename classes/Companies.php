@@ -20,7 +20,7 @@ class Companies extends Conexao {
         $this->salvaOcorrencia($consulta);
     }
 
-    public function query() {
+    public function queryCompany() {
         $consulta = "SELECT * FROM `companies` where id > 0";
         $atributos = ["id", "name"];
         return $this->listarEntidade($consulta, $atributos);

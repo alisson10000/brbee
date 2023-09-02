@@ -16,9 +16,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         $_senha = "";
         $_banco = "sisvendare_brbee";
 
-        $id = "15";
+        $id = "16";
         $reference = "123";
-        $name = "MELIZA";
+        $name = "ALISSON";
         $client_id = "NULL";
         $phone = "NULL";
         $mobile = "NULL";
@@ -45,9 +45,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         $company = new Companies($_local, $_usuario, $_senha, $_banco);
         $company->conectar();
         $company->verificaConexao();
-        //    $company->saveCompany($reference, $name, $client_id, $phone, $mobile, $address, $zipcode, $city, $inactive, $website, $country, $vat, $note, $province, $twitter, $skype, $linkedin, $facebook, $instagram, $google_plus, $youtube, $pinterest, $terms, $company_code, $licensing_url)
-        //   $company->updateCompany($id,$reference, $name, $client_id, $phone, $mobile, $address, $zipcode, $city, $inactive, $website, $country, $vat, $note, $province, $twitter, $skype, $linkedin, $facebook, $instagram, $google_plus, $youtube, $pinterest, $terms, $company_code, $licensing_url)
-        // $company->deleteCompany(2);
-        ?>
+        //    $company->saveCompany($reference, $name, $client_id, $phone, $mobile, $address, $zipcode, $city, $inactive, $website, $country, $vat, $note, $province, $twitter, $skype, $linkedin, $facebook, $instagram, $google_plus, $youtube, $pinterest, $terms, $company_code, $licensing_url);
+        //   $company->updateCompany($id,$reference, $name, $client_id, $phone, $mobile, $address, $zipcode, $city, $inactive, $website, $country, $vat, $note, $province, $twitter, $skype, $linkedin, $facebook, $instagram, $google_plus, $youtube, $pinterest, $terms, $company_code, $licensing_url);
+        //   $company->deleteCompany(18);
+
+
+        $list = $company->queryCompany();
+        ?> 
+        <table>
+            <?php
+            foreach ($list as $value) {
+                ?>
+                <tr>
+                    <td><?php echo $value['id']; ?></td>
+                    <td><?php echo $value['name'] ?></td>
+
+
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
     </body>
 </html>
