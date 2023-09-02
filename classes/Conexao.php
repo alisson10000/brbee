@@ -1,4 +1,5 @@
 <?php
+
 class Conexao {
 
     public $_local;
@@ -148,7 +149,9 @@ class Conexao {
      * }
      * 
      * 
-        */
+     */
 }
+
 require 'Clients.php';
 require 'Companies.php';
+require 'App.php';
