@@ -151,3 +151,4 @@ class Conexao {
         */
 }
 require 'Clients.php';
+require 'Companies.php';

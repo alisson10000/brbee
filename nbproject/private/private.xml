@@ -5,6 +5,8 @@
         <group>
             <file>file:/opt/lampp/htdocs/brbee/classes/Clients.php</file>
             <file>file:/opt/lampp/htdocs/brbee/classes/Conexao.php</file>
+            <file>file:/opt/lampp/htdocs/brbee/companies.php</file>
+            <file>file:/opt/lampp/htdocs/brbee/classes/Companies.php</file>
             <file>file:/opt/lampp/htdocs/brbee/index.php</file>
         </group>
     </open-files>

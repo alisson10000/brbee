@@ -1,30 +1,29 @@
 <?php
 
-class Companies {
+class Companies extends Conexao {
+
     //put your code here
-    
-     public function saveCompany($company_id, $first_name, $last_name, $email, $phone, $mobile, $address, $zipcode, $userpic, $city, $hashed_password, $inactive, $access, $last_active, $last_login, $token, $language, $signature) {
-        $consulta = "INSERT INTO `clients`(`id`, `company_id`, `first_name`, `last_name`, `email`, `phone`, `mobile`, `address`, `zipcode`, `userpic`, `city`, `hashed_password`, `inactive`, `access`, `last_active`, `last_login`, `token`, `language`, `signature`) VALUES (NULL,'$company_id','$first_name','$last_name','$email','$phone','$mobile','$address','$zipcode','$userpic','$city','$hashed_password','$inactive','$access','$last_active','$last_login','$token','$language','$signature')";
+
+    public function saveCompany($reference, $name, $client_id, $phone, $mobile, $address, $zipcode, $city, $inactive, $website, $country, $vat, $note, $province, $twitter, $skype, $linkedin, $facebook, $instagram, $google_plus, $youtube, $pinterest, $terms, $company_code, $licensing_url) {
+        $consulta = "INSERT INTO companies  VALUES (NULL, '$reference','$name', '$client_id', '$phone', '$mobile', '$address', '$zipcode', '$city', '$inactive', '$website', '$country', '$vat', '$note', '$province', '$twitter', '$skype', '$linkedin', '$facebook', '$instagram', '$google_plus', '$youtube', '$pinterest', '$terms', '$company_code', '$licensing_url')";
+
         $this->salvaOcorrencia($consulta);
     }
 
-    public function updateCompany($id, $company_id, $first_name, $last_name, $email, $phone, $mobile, $address, $zipcode, $userpic, $city, $hashed_password, $inactive, $access, $last_active, $last_login, $token, $language, $signature) {
-        $consulta = "UPDATE `clients` SET `company_id`='$company_id',`first_name`='$first_name',`last_name`='$last_name',`email`='$email',`phone`='$phone',`mobile`='$mobile',`address`='$address',`zipcode`='$zipcode',`userpic`='$userpic',`city`='$city',`hashed_password`='$hashed_password',`inactive`='$inactive',`access`='$access',`last_active`='$last_active',`last_login`='$last_login',`token`='$token',`language`='$language',`signature`='$signature' WHERE id='$id'";
+    public function updateCompany($id,$reference, $name, $client_id, $phone, $mobile, $address, $zipcode, $city, $inactive, $website, $country, $vat, $note, $province, $twitter, $skype, $linkedin, $facebook, $instagram, $google_plus, $youtube, $pinterest, $terms, $company_code, $licensing_url) {
+        $consulta = "UPDATE `companies` SET `reference`='$reference',`name`='$name',`client_id`='$client_id',`phone`='$phone',`mobile`='$mobile',`address`='$address',`zipcode`='$zipcode',`city`='$city',`inactive`='$inactive',`website`='$website',`country`='$country',`vat`='$vat',`note`='$note',`province`='$province',`twitter`='$twitter',`skype`='$skype',`linkedin`='$linkedin',`facebook`='$facebook',`instagram`='$instagram',`googleplus`='$google_plus',`youtube`='$youtube',`pinterest`='$pinterest',`terms`='$terms',`company_code`='$company_code',`licensing_url`='$licensing_url' WHERE id='$id'";
         $this->salvaOcorrencia($consulta);
     }
 
     public function deleteCompany($id) {
-        $consulta = "DELETE FROM `clients` WHERE id='$id'";
+        $consulta = "DELETE FROM `companies` WHERE id='$id'";
         $this->salvaOcorrencia($consulta);
     }
 
     public function query() {
-        $consulta = "SELECT * FROM `clients` where id > 0";
-        $atributos = ["id", "first_name"];
+        $consulta = "SELECT * FROM `companies` where id > 0";
+        $atributos = ["id", "name"];
         return $this->listarEntidade($consulta, $atributos);
     }
 
-    
-    
-    
 }
