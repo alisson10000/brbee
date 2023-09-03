@@ -16,13 +16,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         $_usuario = "root";
         $_senha = "";
         $_banco = "sisvendare_brbee";
-        $department = new Departament($_local, $_usuario, $_senha, $_banco);
+        $department = new Department($_local, $_usuario, $_senha, $_banco);
         $department->conectar();
         $department->verificaConexao();
 
         $id = "24";
 
-        $description = "título";
+        $description = "teste";
 
         //   $department->saveDepartment($description);
         //  $department->deleteDepartment($id);

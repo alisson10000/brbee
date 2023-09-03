@@ -1,6 +1,6 @@
 <?php
 
-class Departament extends Conexao{
+class Department extends Conexao{
     //put your code here
     
     
