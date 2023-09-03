@@ -20,12 +20,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         $department->conectar();
         $department->verificaConexao();
 
-         $id = "5";
+        $id = "24";
 
-        $description = "deescrição";
+        $description = "título";
 
-        $department->saveDepartment($description);
-       // $department->deleteDepartment($id);
+        //   $department->saveDepartment($description);
+        //  $department->deleteDepartment($id);
+
+        $list = $department->updateDepartment($id, $description);
         $list = $department->queryDepartment();
         ?>
         <table>

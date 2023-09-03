@@ -13,7 +13,7 @@ class Departament extends Conexao{
     }
 
     public function updateDepartment($id ,  $description) {
-        $consulta = "UPDATE `departament` SET `description='$description' WHERE id='$id'";
+        $consulta = "UPDATE `department` SET `description`='$description' WHERE id=$id";
         $this->salvaOcorrencia($consulta);
     }
 
