@@ -18,12 +18,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         $resellers = new Resellers($_local, $_usuario, $_senha, $_banco);
         $resellers->conectar();
         $resellers->verificaConexao();
-        $id = "2";
+        $id = "1";
         $reseller_id = "2";
-        $url = "lplplplp";
-        $ativo = "S";
+        $url = "qwqw";
+        $ativo = "N";
         //   $resellers->saveResellers($reseller_id,$url,$ativo);
-       //$resellers->updateResellers($id , $reseller_id,$url,$ativo);
+       $resellers->updateResellers($id , $reseller_id,$url,$ativo);
         //   $resellers->deleteResellers($id);
          $list = $resellers->queryResellers();
          
