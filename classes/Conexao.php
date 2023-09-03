@@ -152,7 +152,8 @@ class Conexao {
      */
 }
 
-//require 'Clients.php';
-//require 'Companies.php';
-//require 'App.php';
+require 'Clients.php';
+require 'Companies.php';
+require 'App.php';
 require 'Department.php';
+require 'Resellers.php';
