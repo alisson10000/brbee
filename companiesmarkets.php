@@ -28,14 +28,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
          */
 
         $id = "2";
-        $company_id = "11111";
-        $name = "lima";
-        $cnpj = "1111111";
-        $address = "kjhgkjhg";
-        $telphone = "111111";
-        $mobile = "111111";
-        $city = "hjklhlkjh";
-        $province = "hlkhlkh";
+        $company_id = "6546";
+        $name = "meliza";
+        $cnpj = "54654564";
+        $address = "NULL";
+        $telphone = "654654";
+        $mobile = "654654";
+        $city = "1321231";
+        $province = "23132112";
         $status = "A";
         
         
@@ -43,10 +43,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         
         
 
-    //    $companyMarket->saveCompanyMarket($company_id, $name, $cnpj, $address, $telphone, $mobile, $city, $province, $status);
-
-   //     $companyMarket->updateCompanyMarket($id, $company_id, $name, $cnpj, $address, $telphone, $mobile, $city, $province, $status);
-       
+  //      $companyMarket->saveCompanyMarket($company_id, $name, $cnpj, $address, $telphone, $mobile, $city, $province, $status);
+//
+//        $companyMarket->updateClient($id, $company_id, $first_name, $last_name, $email, $phone, $mobile, $address, $zipcode, $userpic, $city, $hashed_password, $inactive, $access, $last_active, $last_login, $token, $language, $signature);
+//       
    //      $companyMarket->deleteCompanyMarket($id);
         ?>
 

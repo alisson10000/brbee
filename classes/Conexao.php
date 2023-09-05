@@ -160,3 +160,4 @@ require 'Resellers.php';
 require 'AppsChangelogs.php';
 require 'ClientsApps.php';
 require 'CompaniesMarkets.php';
+require 'CompaniesMarketsProducts.php';
