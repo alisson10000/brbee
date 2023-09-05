@@ -158,3 +158,4 @@ require 'App.php';
 require 'Department.php';
 require 'Resellers.php';
 require 'AppsChangelogs.php';
+require 'ClientsApps.php';
