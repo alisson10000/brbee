@@ -163,3 +163,4 @@ require 'CompaniesMarkets.php';
 require 'CompaniesMarketsProducts.php';
 require 'ClientsMachines.php';
 require 'CompaniesStock.php';
+require 'DepartmentCompanies.php';
