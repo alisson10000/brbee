@@ -162,3 +162,4 @@ require 'ClientsApps.php';
 require 'CompaniesMarkets.php';
 require 'CompaniesMarketsProducts.php';
 require 'ClientsMachines.php';
+require 'CompaniesStock.php';
